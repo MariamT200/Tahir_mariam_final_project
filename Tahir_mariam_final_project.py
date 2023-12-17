@@ -1,6 +1,6 @@
 import sys 
 
-sys.argv
+sys.argv #so user can write at the command line. 
 if sys.argv[0] == "Tahir_mariam_final_project.py":
     print("This is the name of the program:", sys.argv[0] )
 if len(sys.argv) > 1:
@@ -84,11 +84,11 @@ print("new dictionary", new_dict)
 # C:\Users\Tahir\OneDrive\Desktop\test\user_file.txt
 
 user_file_directory = input("what is the path directory to your file: ")
-
-user_file = open(user_file_directory, "r")
-list_data = user_file.read()
-user_data_list = list_data.split("\n")
-print(user_data_list)
+# user puts path to the file which they want to turn the contents of into a list
+user_file = open(user_file_directory, "r") #opens the user file
+list_data = user_file.read() # reads the user file
+user_data_list = list_data.split("\n") #tuen file content into list
+print(user_data_list) 
 user_file.close()
 
 
